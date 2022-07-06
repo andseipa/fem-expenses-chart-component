@@ -1,0 +1,39 @@
+@import url(./reset.css);
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-accent-100: hsl(10, 79%, 65%); // Soft red
+  --clr-secondary-100: hsl(186, 34%, 60%); // Cyan
+
+  --clr-neutral-100: hsl(33, 100%, 98%); // Very pale orange
+  --clr-neutral-200: hsl(27, 66%, 92%); // Cream
+  --clr-neutral-600: hsl(28, 10%, 53%); // Medium brown
+  --clr-neutral-800: hsl(25, 47%, 15%); // Dark brown
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: var(--clr-neutral-200);
+}
+section {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 540px;
+  &--top {
+    background-color: var(--clr-accent-100);
+    border-radius: 20px;
+  }
+  &--bottom {
+    background-color: var(--clr-neutral-100);
+    border-radius: 20px;
+  }
+}
